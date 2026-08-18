@@ -4,8 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lesson 1</title>
+    <style>
+      .welcome-container {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: top 100px;
+      }
+      .welcome-txt {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .word-welcome {
+        color: #6f42c1;
+        display: inline-block;
+        animation: fadeInFadeUp 2s ease-out forwards;
+      }
+      .word-back {
+        color: #007bff;
+        display: inline-block;
+        animation: fadeInFadeUp 2s ease-out forwards;
+        opacity: 0;
+      }
+       @keyframes fadeInFadeUp {
+            0% {
+                opacity: 0;             
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;         
+                transform: translateY(0);    
+            }
+        }
+    </style>
   </head>
   <body>
+        <div class="welcome-container">
+        <h1 class="welcome-text">
+            <span class="word-welcome">Welcome</span>
+            <span class="word-back">Back!</span>
+        </h1>
+    </div>
+
+    <!-- <div
+      style="
+        text-align: center;
+        font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+        margin: top 50px;
+      "
+    >
+      <h1 style="font: size 10px; font-weight: bold; margin: 0">
+        <span style="color: #007bff"> Welcome </span>
+        <span style="color: #6f42c1"> Back! </span>
+      </h1>
+      <p style="color: #6c757d; font-size: 18px; margin-top: 10px">
+        We are happy to see you again.
+      </p>
+    </div> -->
     <!-- <h1>My First Project</h1>
     <p>My first paragragh</p>
     <img
@@ -15,13 +70,12 @@
       alt=" girle with a jack"
     /> -->
     <form action="#" method="post">
-        <label for="fname">FirstName</label><br>
-        <input type="text" id="fname" name="fnmae" value="bayan"><br>
-        <label for="lname">LastNmae</label><br>
-        <input type="text" id=lname name="lname" value="ali"><br><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-
+      <label for="fname">FirstName</label><br />
+      <input type="text" id="fname" name="fnmae" value="bayan" /><br />
+      <label for="lname">LastNmae</label><br />
+      <input type="text" id="lname" name="lname" value="ali" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
     </form>
   </body>
 </html>
